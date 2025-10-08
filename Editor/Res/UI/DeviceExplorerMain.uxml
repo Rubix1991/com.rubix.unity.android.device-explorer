@@ -1,0 +1,43 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Template name="DeviceExplorerView" src="project://database/Packages/com.rubix.unity.android.device-explorer/Editor/Res/UI/DeviceExplorerView.uxml?fileID=9197481963319205126&amp;guid=21681448141eba24d9713f0705bb593f&amp;type=3#DeviceExplorerView" />
+    <ui:VisualElement style="flex-grow: 0; flex-direction: row; flex-shrink: 0; height: 20px;">
+        <uie:ToolbarToggle name="toggleShowPackages" text="&lt;b&gt;Packages&lt;/b&gt;" value="true" toggle-on-label-click="true" style="flex-grow: 0; flex-shrink: 1;" />
+        <uie:ToolbarMenu name="toolbarMenuDevices" style="flex-grow: 1; max-width: 400px;" />
+    </ui:VisualElement>
+    <ui:VisualElement style="flex-direction: row; height: 100%;">
+        <ui:VisualElement name="packagesView" style="width: 300px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+            <ui:VisualElement style="flex-grow: 0; flex-direction: row; flex-shrink: 0; height: 20px;">
+                <uie:ToolbarSearchField name="packagesFilter" style="flex-shrink: 1;" />
+                <ui:Button icon-image="project://database/Packages/com.rubix.unity.android.device-explorer/Editor/Res/Icons/Refresh.png?fileID=2800000&amp;guid=4902273ffdbf4e841a4afdf1260f66af&amp;type=3#Refresh" name="btnRefreshPackages" tooltip="Refresh Packages" style="flex-shrink: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+            </ui:VisualElement>
+            <ui:ListView name="packagesList" show-alternating-row-backgrounds="All" horizontal-scrolling="true" selection-type="Multiple" style="height: 100%; -unity-font-definition: url(&quot;project://database/Packages/com.rubix.unity.android.device-explorer/Editor/Res/Fonts/device-explorer-consola.ttf?fileID=12800000&amp;guid=48fcf6cc2cc940a43ab9a95b21359729&amp;type=3#device-explorer-consola&quot;);" />
+            <ui:VisualElement name="packageInformation" style="flex-grow: 1; flex-shrink: 0; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
+                <ui:TextField label="&lt;b&gt;Installer&lt;/b&gt;" readonly="true" name="txtFieldInstaller" />
+                <ui:TextField label="&lt;b&gt;App Id&lt;/b&gt;" readonly="true" name="txtFieldAppId" />
+                <ui:TextField label="&lt;b&gt;User Id&lt;/b&gt;" readonly="true" name="txtFieldUserId" />
+                <ui:Label text="&lt;b&gt;Launch Options:&lt;/b&gt;" style="margin-top: 15px; margin-left: 5px;" />
+                <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                    <ui:TextField label="&lt;b&gt;Activity&lt;/b&gt;" name="txtFieldActivity" style="flex-direction: column; margin-left: 10px; padding-left: 0; flex-grow: 1; flex-shrink: 1;" />
+                    <ui:DropdownField name="dropDownActivities" style="flex-shrink: 0; flex-direction: row-reverse; height: 19px; align-self: flex-end; width: 18px; margin-left: 0; flex-grow: 0;" />
+                </ui:VisualElement>
+                <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                    <ui:TextField label="&lt;b&gt;Additional Command Line&lt;/b&gt;" name="txtFieldAddionalCommandLine" style="flex-direction: column; margin-left: 10px; padding-left: 0; flex-grow: 1; flex-shrink: 1;" />
+                </ui:VisualElement>
+                <ui:Button text="Launch" name="btnLaunch" />
+                <ui:VisualElement name="helpBoxParent" style="flex-grow: 0; min-height: 60px;">
+                    <ui:ScrollView style="min-height: 40px;">
+                        <ui:HelpBox message-type="Error" name="helpBox" text="Dummy&#10;" style="flex-grow: 0; flex-shrink: 0; flex-direction: row;" />
+                    </ui:ScrollView>
+                    <ui:VisualElement style="flex-grow: 1; flex-direction: row; flex-shrink: 0; min-height: 20px;">
+                        <ui:Button text="Copy Error" name="helpBoxCopyError" style="flex-grow: 1; flex-shrink: 1;" />
+                        <ui:Button text="Open Log" name="helpBoxOpenLog" style="flex-grow: 1; flex-shrink: 1;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:TwoPaneSplitView style="border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 0; flex-shrink: 1;">
+            <ui:Instance template="DeviceExplorerView" name="fileExplorerLeft" view-data-key="FileExplorerLeft" style="min-width: 200px;" />
+            <ui:Instance template="DeviceExplorerView" name="fileExplorerRight" view-data-key="FileExplorerRight" style="min-width: 200px;" />
+        </ui:TwoPaneSplitView>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="container" style="width: 100%; height: 100%;">
+        <ui:ScrollView mode="VerticalAndHorizontal" style="width: 100%; height: 100%;">
+            <ui:TextField name="textField" value="This is a multiline text field. This text can wrap to multiple lines, and if a line is too long, it will have a horizontal scrollbar.   The horizontal scrollbar appears only when the line width exceeds the width of the ScrollView. And here&apos;s some more text to test the horizontal scrolling.   This is for testing horizontal scrolling If we go past the boundaries of the container, we can scroll!" multiline="true" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

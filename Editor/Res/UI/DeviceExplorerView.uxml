@@ -1,0 +1,26 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Packages/com.rubix.unity.android.device-explorer/Editor/Res/UI/USS/DeviceExplorerListView.uss?fileID=7433441132597879392&amp;guid=a7eb73f95fd7edc4d9e71dc9592e103f&amp;type=3#DeviceExplorerListView" />
+    <ui:VisualElement style="flex-direction: row; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-bottom-width: 1px; height: 20px; flex-grow: 0; flex-shrink: 0;">
+        <ui:TextField name="addressTextField" style="flex-grow: 1; -unity-text-align: middle-left; height: 20px; margin-top: 0; margin-bottom: 0; margin-left: 0; margin-right: 0; flex-shrink: 1;" />
+        <ui:Button icon-image="project://database/Packages/com.rubix.unity.android.device-explorer/Editor/Res/Icons/Refresh.png?fileID=2800000&amp;guid=4902273ffdbf4e841a4afdf1260f66af&amp;type=3#Refresh" name="btnRefresh" tooltip="Refresh" style="flex-shrink: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+    </ui:VisualElement>
+    <ui:MultiColumnListView fixed-item-height="20" show-alternating-row-backgrounds="All" name="MultiColumnListView" view-data-key="FileExplorerView" style="flex-grow: 1; min-height: 100px; -unity-font-definition: url(&quot;project://database/Packages/com.rubix.unity.android.device-explorer/Editor/Res/Fonts/device-explorer-consola.ttf?fileID=12800000&amp;guid=48fcf6cc2cc940a43ab9a95b21359729&amp;type=3#device-explorer-consola&quot;);">
+        <ui:Columns>
+            <ui:Column name="Icon" width="10" resizable="false" />
+            <ui:Column name="name" title="Name" optional="false" min-width="200px" />
+            <ui:Column name="permissions" title="Permissions" width="120" />
+            <ui:Column name="dateModified" title="Date Modified" width="150" />
+            <ui:Column name="size" title="Size" width="120" />
+            <ui:Column name="type" title="Type" width="120" />
+        </ui:Columns>
+    </ui:MultiColumnListView>
+    <ui:VisualElement name="helpBoxParent" style="flex-grow: 0; min-height: 60px;">
+        <ui:ScrollView style="min-height: 40px;">
+            <ui:HelpBox message-type="Error" name="helpBox" text="Dummy&#10;" style="flex-grow: 0; flex-shrink: 0; flex-direction: row;" />
+        </ui:ScrollView>
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row; flex-shrink: 0; min-height: 20px;">
+            <ui:Button text="Copy Error" name="helpBoxCopyError" style="flex-grow: 1; flex-shrink: 1;" />
+            <ui:Button text="Open Log" name="helpBoxOpenLog" style="flex-grow: 1; flex-shrink: 1;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

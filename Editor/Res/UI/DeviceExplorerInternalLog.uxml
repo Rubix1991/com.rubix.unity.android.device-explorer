@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement style="flex-direction: row; flex-grow: 0; flex-shrink: 0; width: auto;">
+        <uie:ToolbarSearchField name="searchField" style="flex-shrink: 0; flex-grow: 1;" />
+        <ui:Button text="Clear" name="btnClear" style="flex-grow: 0;" />
+    </ui:VisualElement>
+    <ui:ListView name="ListView" show-alternating-row-backgrounds="All" selection-type="Multiple" horizontal-scrolling="true" virtualization-method="FixedHeight" fixed-item-height="14" style="flex-grow: 1; flex-shrink: 1; -unity-font-definition: url(&quot;project://database/Packages/com.rubix.unity.android.device-explorer/Editor/Res/Fonts/device-explorer-consola.ttf?fileID=12800000&amp;guid=48fcf6cc2cc940a43ab9a95b21359729&amp;type=3#device-explorer-consola&quot;);" />
+</ui:UXML>
