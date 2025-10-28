@@ -3,6 +3,8 @@
     <ui:VisualElement style="flex-grow: 0; flex-direction: row; flex-shrink: 0; height: 20px;">
         <uie:ToolbarToggle name="toggleShowPackages" text="&lt;b&gt;Packages&lt;/b&gt;" value="true" toggle-on-label-click="true" style="flex-grow: 0; flex-shrink: 1;" />
         <uie:ToolbarMenu name="toolbarMenuDevices" style="flex-grow: 1; max-width: 400px;" />
+        <ui:VisualElement style="flex-grow: 1;" />
+        <uie:ToolbarMenu name="toolbarTools" text="Tools" style="flex-grow: 0;" />
     </ui:VisualElement>
     <ui:VisualElement style="flex-direction: row; height: 100%;">
         <ui:VisualElement name="packagesView" style="width: 300px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;">
@@ -23,7 +25,10 @@
                 <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
                     <ui:TextField label="&lt;b&gt;Additional Command Line&lt;/b&gt;" name="txtFieldAddionalCommandLine" style="flex-direction: column; margin-left: 10px; padding-left: 0; flex-grow: 1; flex-shrink: 1;" />
                 </ui:VisualElement>
-                <ui:Button text="Launch" name="btnLaunch" />
+                <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                    <ui:Button text="Launch" name="btnLaunch" style="flex-grow: 1; flex-shrink: 1; width: 50%;" />
+                    <ui:Button text="Stop" name="btnStop" style="flex-shrink: 1; flex-grow: 1; width: 50%;" />
+                </ui:VisualElement>
                 <ui:VisualElement name="helpBoxParent" style="flex-grow: 0; min-height: 60px;">
                     <ui:ScrollView style="min-height: 40px;">
                         <ui:HelpBox message-type="Error" name="helpBox" text="Dummy&#10;" style="flex-grow: 0; flex-shrink: 0; flex-direction: row;" />

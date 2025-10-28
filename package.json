@@ -1,7 +1,7 @@
 {
     "name": "com.rubix.unity.android.device-explorer",
     "displayName": "Android Device Explorer",
-    "version": "0.0.2-exp",
+    "version": "0.0.3-exp",
     "unity": "6000.0",
     "description": "Utility for exploring files on the Android device. You can also install, launch, uninstall packages, transfer files between PC and Android.",
     "keywords": ["Android", "Device", "Explorer"]
