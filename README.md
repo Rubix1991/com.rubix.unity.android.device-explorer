@@ -6,6 +6,7 @@ A Unity package for exploring the Android file system and transferring files bet
 
 ## Requirements
 
+* [Git](https://git-scm.com/install/)
 * Unity **6000.0.0f1** or higher  
 * Unity Android Build Support
 
