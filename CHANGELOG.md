@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Fixes & Improvements
 - Add Tools->Open Terminal button
 - Add Stop button in Package view
+- Add Dump Threads in Package view
 
 ## [0.0.2-preview] - 2025-09-28
 
