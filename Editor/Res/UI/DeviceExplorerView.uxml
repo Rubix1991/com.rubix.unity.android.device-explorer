@@ -4,7 +4,7 @@
         <ui:TextField name="addressTextField" style="flex-grow: 1; -unity-text-align: middle-left; height: 20px; margin-top: 0; margin-bottom: 0; margin-left: 0; margin-right: 0; flex-shrink: 1;" />
         <ui:Button icon-image="project://database/Packages/com.rubix.unity.android.device-explorer/Editor/Res/Icons/Refresh.png?fileID=2800000&amp;guid=4902273ffdbf4e841a4afdf1260f66af&amp;type=3#Refresh" name="btnRefresh" tooltip="Refresh" style="flex-shrink: 1; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
     </ui:VisualElement>
-    <ui:MultiColumnListView fixed-item-height="20" show-alternating-row-backgrounds="All" name="MultiColumnListView" view-data-key="FileExplorerView" style="flex-grow: 1; min-height: 100px; -unity-font-definition: url(&quot;project://database/Packages/com.rubix.unity.android.device-explorer/Editor/Res/Fonts/device-explorer-consola.ttf?fileID=12800000&amp;guid=48fcf6cc2cc940a43ab9a95b21359729&amp;type=3#device-explorer-consola&quot;);">
+    <ui:MultiColumnListView fixed-item-height="20" show-alternating-row-backgrounds="All" name="MultiColumnListView" view-data-key="FileExplorerView" sorting-mode="Default" style="flex-grow: 1; min-height: 100px; -unity-font-definition: url(&quot;project://database/Packages/com.rubix.unity.android.device-explorer/Editor/Res/Fonts/device-explorer-consola.ttf?fileID=12800000&amp;guid=48fcf6cc2cc940a43ab9a95b21359729&amp;type=3#device-explorer-consola&quot;);">
         <ui:Columns>
             <ui:Column name="Icon" width="10" resizable="false" />
             <ui:Column name="name" title="Name" optional="false" min-width="200px" />
