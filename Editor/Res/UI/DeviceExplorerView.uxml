@@ -8,6 +8,8 @@
         <ui:Columns>
             <ui:Column name="Icon" width="10" resizable="false" />
             <ui:Column name="name" title="Name" optional="false" min-width="200px" />
+            <ui:Column name="owner" title="Owner" width="120" />
+            <ui:Column name="group" title="Group" width="120" />
             <ui:Column name="permissions" title="Permissions" width="120" />
             <ui:Column name="dateModified" title="Date Modified" width="150" />
             <ui:Column name="size" title="Size" width="120" />
