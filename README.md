@@ -14,8 +14,12 @@ A Unity package for exploring the Android file system and transferring files bet
 
 1. In Unity, open **Window → Package Manager**.  
 2. In the top-left corner, click the **+** button and select **Install package from Git URL**.  
-3. Enter the following URL:
+3. Enter the following HTTPS url:
+   ```
+   https://github.com/Rubix1991/com.rubix.unity.android.device-explorer.git
+   ```
 
+   or you can use the SSH url:
    ```
    git@github.com:Rubix1991/com.rubix.unity.android.device-explorer.git
    ```
