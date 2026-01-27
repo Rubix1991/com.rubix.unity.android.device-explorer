@@ -7,6 +7,7 @@ A Unity package for exploring the Android file system and transferring files bet
 ## Requirements
 
 * [Git](https://git-scm.com/install/)
+
 * Unity **6000.0.0f1** or higher  
 * Unity Android Build Support
 
@@ -87,7 +88,7 @@ Right-clicking any package opens a context menu with these options:
 | **View Manifest** | Pulls the package APK from the Android device to the PC, extracts `AndroidManifest.xml`, and opens it in the default application. |
 | **View Properties** | Displays package properties in a popup window. |
 | **Misc → Produce ANR → With SIGSTOP** | Sends SIGSTOP signal to app, this should force ApplicationNotResponding after 5 seconds, if succeeded a file in /data/anr folder will be produced.<br>__Note:__ On retail phones it may be impossible to pull this file, it can be pulled only on emulators.. |
-| **Misc → Produce Tombstone → With SIGABRT** | Sends SIGABRT signal to app, in process killing the app, this should force creation of a tombstone with all threads in /data/tombstones. <br>__Note:__ Not all phones allow pull tombstones, it works on Android 16, but doesn't work on Android 10. |
+| **Misc → Produce Tombstone → With SIGABRT** | Sends SIGABRT signal to app, in process killing the app, this should force creation of a tombstone with all threads in /data/tombstones. <br>__Note:__ Not all phones allow pulling tombstones, it works on Android 16, but might not work on Android 10. |
 | **Misc → Produce Tombstone → With SIGBUS** | Sends SIGBUS signal to app, same as SIGABRT, this signal kills the app and creates a tombstone. |
 | **Navigate** | Opens the selected directory (install folder, data folder, cache, etc.). |
 | **Uninstall** | Uninstalls the selected package(s) from the Android device. |
